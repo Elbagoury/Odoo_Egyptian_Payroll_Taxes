@@ -1,0 +1,10 @@
+if contract.wage <= 2083.33 :
+     result = (contract.wage * 0.1)
+elif 2083.33 < contract.wage <= 3333.33:
+    result = (2083.33*0.1 + (contract.wage - 2083.33)*0.15)
+elif 3333.33 < contract.wage <= 20416.67 :
+    result = (2083.33*0.1 + 1250*0.15 + (contract.wage - 3333.33)*0.2 )
+elif contract.wage > 20416.67 :
+    result = (2083.33*0.1 + 1250*0.15 + 17083.33*0.2 + (contract.wage - 20416.67 )*0.2 )
+else:
+    result = 0
